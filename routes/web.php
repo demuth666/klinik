@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\Daftarobat;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -14,8 +16,8 @@ use App\Http\Controllers\AdminController;
 |
 */
 
-Route::get('/', function () {
-    return view('auth/login');
+Route::get('/obat', function () {
+    return view('admin/daftarObat');
 });
 
 Route::get('login', 'App\Http\Controllers\AuthController@index')->name('login');
@@ -30,4 +32,6 @@ Route::group(['middleware' => ['auth']], function () {
     Route::group(['middleware' => ['cek_login:editor']], function () {
         Route::resource('editor', AdminController::class);
     });
+
+    Route::resource('/daftarObat', Daftarobat::class);
 });

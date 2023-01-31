@@ -28,7 +28,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="">
 					<i class='bx bxs-shopping-bag-alt' ></i>
 					<span class="text">Obat</span>
 				</a>
@@ -72,7 +72,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="#" class="logout">
+				<a href="{{url('logout')}}" class="logout">
 					<i class='bx bxs-log-out-circle' ></i>
 					<span class="text">Logout</span>
 				</a>
