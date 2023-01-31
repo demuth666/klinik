@@ -2,7 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
+
 use App\Http\Controllers\Daftarobat;
+
+use App\Http\Controllers\KasirController;
 
 
 /*
@@ -27,10 +30,11 @@ Route::get('logout', 'App\Http\Controllers\AuthController@logout')->name('logout
 
 Route::group(['middleware' => ['auth']], function () {
     Route::group(['middleware' => ['cek_login:admin']], function () {
-        Route::resource('admin', AdminController::class);
+        Route::get('/admin', [AdminController::class, 'index'])->name('dashboard');
+        Route::get('/obat', [AdminController::class, 'obat'])->name('obat');
     });
-    Route::group(['middleware' => ['cek_login:editor']], function () {
-        Route::resource('editor', AdminController::class);
+    Route::group(['middleware' => ['cek_login:kasir']], function () {
+        Route::get('/kasir', [KasirController::class, 'index']);
     });
 
     Route::resource('/daftarObat', Daftarobat::class);

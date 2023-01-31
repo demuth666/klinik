@@ -7,17 +7,15 @@
 	<!-- Boxicons -->
 	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 	<!-- My CSS -->
-	<link rel="stylesheet" href={{asset('css/style.css')}}>
+	<link rel="stylesheet" href="{{asset('css/style.css')}}">
 
 	<title></title>
 </head>
 <body>
-
-
 	<!-- SIDEBAR -->
 	<section id="sidebar">
 		<a href="#" class="brand">
-			<img src="assets/logo.png" alt="Logo" width="25" height="25" class="d-inline-block align-text-top"> 
+			<img src="{{asset('images/logo.png')}" alt="Logo" width="25" height="25" class="d-inline-block align-text-top"> 
 			<span class="text">Klinik Pratama Nur Intan</span>
 		</a>
 		<ul class="side-menu top">
@@ -28,7 +26,11 @@
 				</a>
 			</li>
 			<li>
+
 				<a href="">
+
+				<a href="{{ route ('obat')}}">
+
 					<i class='bx bxs-shopping-bag-alt' ></i>
 					<span class="text">Obat</span>
 				</a>
@@ -94,6 +96,7 @@
 		</nav>
 		<!-- NAVBAR -->
 
+		<div class="loader"></div>
 		<!-- MAIN -->
 		<main>
 			<div class="head-title">
