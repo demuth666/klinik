@@ -12,12 +12,10 @@
 	<title></title>
 </head>
 <body>
-
-
 	<!-- SIDEBAR -->
 	<section id="sidebar">
 		<a href="#" class="brand">
-			<img src="assets/logo.png" alt="Logo" width="25" height="25" class="d-inline-block align-text-top"> 
+			<img src={{asset('images/logo.png')}} alt="Logo" width="25" height="25" class="d-inline-block align-text-top"> 
 			<span class="text">Klinik Pratama Nur Intan</span>
 		</a>
 		<ul class="side-menu top">
@@ -28,7 +26,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="{{ route ('obat')}}">
 					<i class='bx bxs-shopping-bag-alt' ></i>
 					<span class="text">Obat</span>
 				</a>
@@ -72,7 +70,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="#" class="logout">
+				<a href="{{url('logout')}}" class="logout">
 					<i class='bx bxs-log-out-circle' ></i>
 					<span class="text">Logout</span>
 				</a>
@@ -94,6 +92,7 @@
 		</nav>
 		<!-- NAVBAR -->
 
+		<div class="loader"></div>
 		<!-- MAIN -->
 		<main>
 			<div class="head-title">
