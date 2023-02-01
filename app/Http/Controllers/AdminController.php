@@ -13,6 +13,10 @@ class AdminController extends Controller
 
     public function obat()
     {
+
+        return view('admin/daftarObat');
+
         return redirect('asfa');
+
     }
 }
