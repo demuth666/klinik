@@ -17,4 +17,9 @@ class DaftarObat extends Controller
             'user' => $user
         ]);
     }
+
+    public function add()
+    {
+        return view('admin.Obat.add');
+    }
 }

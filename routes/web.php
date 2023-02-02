@@ -30,6 +30,7 @@ Route::group(['middleware' => ['auth']], function () {
     Route::group(['middleware' => ['cek_login:admin']], function () {
         Route::get('/admin', [AdminController::class, 'index'])->name('dashboard');
         Route::get('/obat', [DaftarObat::class, 'index'])->name('daftar.obat');
+        Route::get('/obat/add', [DaftarObat::class, 'add'])->name('add.obat');
     });
     Route::group(['middleware' => ['cek_login:kasir']], function () {
         Route::get('/kasir', [KasirController::class, 'index']);
