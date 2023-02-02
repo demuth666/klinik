@@ -216,7 +216,7 @@ body{
 .home-section{
   position: relative;
   background: #f0f0f0;
-  height: 100vh;
+  /* height: 100vh; */
   left: 260px;
   width: calc(100% - 260px);
   transition: all 0.5s ease;
@@ -312,7 +312,7 @@ body{
     width: 100%;
     margin-right: auto;
   }
-  nav .form-group {
+  /* nav .form-group {
     position: relative;
   }
   nav .form-group input {
@@ -330,7 +330,7 @@ body{
     transform: translateY(-50%);
     right: 16px;
     color: var(--dark-grey);
-  }
+  } */
   nav .nav-link {
     position: relative;
   }
@@ -690,12 +690,10 @@ h2 {
 
 
 .konten{
-  margin : 20px;
+  margin :20px;
   background-color: white;
   padding: 20px;
   border-radius: 20px;
-  height: 100%;
-  color: #324479;
 }
 
 table{
@@ -727,7 +725,9 @@ table{
 
 thead{
   text-align: center;
- border-bottom: 1px solid #324479;
+ 
+
+  
 }
 /* thead th{
   padding: 5px;
@@ -778,7 +778,7 @@ table thead th + th,
     border-radius: 0 0 5px 0;
   }
   
-.btn{
+/* .btn{
   background-color: #329DFF;
   width: 150px;
   height: 40px;
@@ -787,7 +787,7 @@ table thead th + th,
   margin-left: 10px;
   margin-bottom: 20px;
   margin-top: 20px;
-}
+} */
 .btn p{
   color: white;
   font-size: 13px;
@@ -834,3 +834,76 @@ table thead th + th,
           /* ############## Form    ########### */
 /* ############################################################### */
 
+.form-horizontal .form-group {
+  margin-right: 0;
+  margin-left: 0
+}
+.form-group {
+  margin-bottom: 10px
+}
+.form-group.has-feedback span {
+  display: block !important;
+}
+.form-group .btn {
+  margin-bottom: -6px;
+}
+.form-horizontal .form-group {
+  margin-right: 0;
+  margin-left: 0
+}
+.form-horizontal .control-label {
+  padding-top: 8px;
+  font-size: 15px;
+  font-weight: 200;
+}
+
+
+/* .form-control:focus {
+    border-color: #CCD0D7;
+    box-shadow: none !important
+}
+
+.form-control-feedback {
+    margin-top: 8px;
+    height: 23px;
+    color: #bbb;
+    line-height: 24px;
+    font-size: 15px
+}
+.form-control-feedback.left {
+  border-right: 1px solid #ccc;
+  left: 13px
+}
+.form-control-feedback.right {
+  border-left: 1px solid #ccc;
+  right: 13px
+}
+.form-control.has-feedback-left {
+  padding-left: 45px
+}
+.form-control.has-feedback-right {
+  padding-right: 45px
+} */
+
+.form-select{
+  height: 35px;
+}
+
+
+.form-group .tombol{
+  margin: 20px;
+  margin-left: 30px;
+  justify-content: end;
+}
+/* .buttons button{
+  border-style: none;
+  background-color: #324479;
+  width: 100px;
+  border-radius: 5px;
+  color: white;
+}
+
+.buttons button:hover{
+  border: 1px solid white;
+  background-color: #5B6994;
+} */

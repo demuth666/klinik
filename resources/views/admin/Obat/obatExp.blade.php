@@ -9,10 +9,8 @@
         </div>
 
         <div class="d-flex admin">
-            @if (Auth::check())
-            <h6 class=" mt-1"> {{ Auth::user()->username }}</h6>
+            <h6 class=" mt-1"> </h6>
         </div>
-        @endif
     </div>
     <div class="sistem"><span>Sistem Informasi Apotek</span></div>
 
@@ -20,7 +18,7 @@
         <div class="row mb-3 mt-n1">
             <div class="col-6">
                 <div class="daftar">
-                    <th>Daftar Obat</th>
+                    <th>Obat Kedaluarsa</th>
                 </div>
             </div>
         </div>
@@ -34,8 +32,7 @@
                   text-align: center;
                   margin-left: 10px;
                   margin-bottom: 20px;
-                  margin-top: 20px;
-                  font-size:15px;"><i class="bi bi-plus-circle"></i> Tambah Obat</button></a>
+                  margin-top: 20px;"><i class="bi bi-plus-circle"></i> Tambah Obat</button></a>
         </div>
         <div class="row">
             <div class="col-md-2">
@@ -93,21 +90,8 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach ($obat as $obat)
-                    <tr>
-                        <th>{{$obat->id}}</th>
-                        <td>{{$obat->nama_obat}}</td>
-                        <td>{{$obat->nama_dagang}}</td>
-                        <td>{{$obat->golongan_obat}}</td>
-                        <td>{{$obat->unit}}</td>
-                        <td>{{$obat->perusahaan}}</td>
-                        <td>{{$obat->jenis}}</td>
-                        <td>{{$obat->expired}}</td>
-                        <td>{{$obat->harga_beli}}</td>
-                        <td>{{$obat->harga_beli_strip}}</td>
-                        <td>{{$obat->harga_beli_satuan}}</td>
-                    </tr>
-                    @endforeach
+
+
                 </tbody>
             </table>
 
