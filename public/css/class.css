@@ -778,6 +778,21 @@ table thead th + th,
     border-radius: 0 0 5px 0;
   }
   
+
+  tbody tr td .coll{
+    width: 100%;
+    padding-left: 40%;
+   }
+   
+   tbody tr td .coll .fbtn{
+     display: flex;
+     flex-direction: row;  
+   }
+   
+   tbody tr td .fbtn form button{
+    border-style: none;
+    background-color: transparent;
+   }
 /* .btn{
   background-color: #329DFF;
   width: 150px;

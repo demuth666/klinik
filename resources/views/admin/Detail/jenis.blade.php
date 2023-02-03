@@ -18,9 +18,21 @@
         <div class="row mb-3 mt-n1">
             <div class="col-6">
                 <div class="daftar">
-                    <th>Obat Kedaluarsa</th>
+                    <th>Jenis Obat</th>
                 </div>
             </div>
+        </div>
+
+        <div>
+            <a href=""></a><button type=" button" class="btn btn-outline-primary text-white h6" style="background-color: #329DFF;
+                  width: 200px;
+                  height: 40px;
+                  border-radius: 10px;
+                  text-align: center;
+                  margin-left: 10px;
+                  margin-bottom: 20px;
+                  margin-top: 20px;
+                  font-size:15px;"><i class="bi bi-plus-circle"></i> Tambah Jenis Obat</button></a>
         </div>
         <div class="row">
             <div class="col-md-2">
@@ -63,22 +75,27 @@
             <table>
                 <thead class="col-6">
                     <tr class="col-6">
-                        <th>id</th>
-                        <th>Nama Obat</th>
-                        <th>Nama Dagang</th>
-                        <th>Gol Obat</th>
                         <th>Unit</th>
-                        <th>PBF/PT</th>
-                        <th>Jenis</th>
-                        <th>Expired</th>
-                        <th>Harga Beli</th>
-                        <th>Harga Beli Strip</th>
-                        <th>Harga Beli Satuan</th>
+                        <th>Aksi</th>
 
                     </tr>
                 </thead>
                 <tbody>
 
+                    <tr>
+                        <td>strip</td>
+                        <td>
+                            <div class="coll">
+                                <div class="fbtn">
+                                    <a href=""><i><img width="20" src="{{asset('images/edit.png')}}" alt=""></i></a>
+                                    <form action="" method="post">
+                                        <button><i><img width="20" src="{{asset('images/trash.png')}}"
+                                                    alt=""></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
 
                 </tbody>
             </table>
