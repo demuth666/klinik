@@ -25,7 +25,7 @@
             <ul class="drop_link ">
                 <li><a href="{{ route ('daftar.obat') }}">Daftar Obat</a></li>
                 <li><a href="{{ route ('daftar.obatexp') }}">Obat Kedaluarsa</a></li>
-                <li><a href='#settings'>Obat Habis</a></li>
+                <li><a href="{{ route ('daftar.obathabis') }}">Obat Habis</a></li>
 
             </ul>
 
@@ -38,9 +38,10 @@
                 </div>
             </a>
             <ul class="drop_link ">
-                <li><a href='#settings'>Daftar Obat</a></li>
-                <li><a href='#settings'>Obat Kedaluarsa</a></li>
-                <li><a href='#settings'>Obat Habis</a></li>
+                <li><a href="{{ route ('nama.namaobat') }}">Nama Obat</a></li>
+                <li><a href="{{ route ('nama.Gol_obat') }}">Golongan Obat</a></li>
+                <li><a href="{{ route ('nama.unit') }}">Unit</a></li>
+                <li><a href="{{ route ('nama.jenis') }}">Jenis</a></li>
             </ul>
 
         </li>

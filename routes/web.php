@@ -5,6 +5,10 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Daftarobat;
 use App\Http\Controllers\Obatexp;
 use App\Http\Controllers\Obathabis;
+use App\Http\Controllers\Namaobat;
+use App\Http\Controllers\Golonganobat;
+use App\Http\Controllers\Unit;
+use App\Http\Controllers\Jenis;
 
 
 /*
@@ -33,6 +37,13 @@ Route::group(['middleware' => ['auth']], function () {
         Route::get('/obat', [DaftarObat::class, 'index'])->name('daftar.obat');
         Route::get('/obat/add', [DaftarObat::class, 'add'])->name('add.obat');
         Route::get('/obatexp', [Obatexp::class, 'index'])->name('daftar.obatexp');
+        Route::get('/obathabis', [Obathabis::class, 'index'])->name('daftar.obathabis');
+        Route::get('/namaobat', [Namaobat::class, 'index'])->name('nama.namaobat');
+        Route::get('/nama/addnama', [Namaobat::class, 'add'])->name('add.nama');
+        Route::get('/nama/editnama', [Namaobat::class, 'edit'])->name('edit.nama');
+        Route::get('/Gol_obat', [Golonganobat::class, 'index'])->name('nama.Gol_obat');
+        Route::get('/unit', [Unit::class, 'index'])->name('nama.unit');
+        Route::get('/jenis', [Jenis::class, 'index'])->name('nama.jenis');
     });
     Route::group(['middleware' => ['cek_login:kasir']], function () {
         Route::get('/kasir', [KasirController::class, 'index']);

@@ -3,10 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Obat;
-use App\Models\User;
+use Illuminate\Support\Facades\DB;
 
-class Obathabis extends Controller
+class Golonganobat extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +14,7 @@ class Obathabis extends Controller
      */
     public function index()
     {
-        return view('admin.Obat.obatHabis',
-        );
+        return view('admin.Detail.golObat',);
     }
 
     /**

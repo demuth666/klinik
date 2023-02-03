@@ -18,10 +18,12 @@
         <div class="row mb-3 mt-n1">
             <div class="col-6">
                 <div class="daftar">
-                    <th>Obat Kedaluarsa</th>
+                    <th>Obat Habis</th>
                 </div>
             </div>
         </div>
+
+
         <div class="row">
             <div class="col-md-2">
                 <div class="d-inline">show</div>
