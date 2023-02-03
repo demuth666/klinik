@@ -26,7 +26,7 @@
       </div>
           
     <div>
-<a href="{{ route ('add.obat') }}"></a><button type="button" class="btn btn-outline-primary text-white h6"><i class="bi bi-plus-circle"></i> Tambah Obat</button></a>
+<a href="{{ route ('add.obat') }}"><button type="button" class="btn btn-outline-primary text-white h6"><i class="bi bi-plus-circle"></i> Tambah Obat</button></a>
           </div>
 <div class="row">
   <div class="col-md-2">
